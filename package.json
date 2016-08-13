@@ -1,6 +1,6 @@
 {
   "name": "react-print",
-  "version": "1.2.19",
+  "version": "1.2.20",
   "description": "React Components for making print CSS templates cleaner and easier to manage",
   "main": "dist/react-print.min.js",
   "scripts": {
