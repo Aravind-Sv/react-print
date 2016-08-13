@@ -3,8 +3,7 @@ var path = require('path'),
 
 var PATHS = {
     src: path.join(__dirname, 'src'),
-    build: path.join(__dirname, 'dist'),
-    app: path.resolve(__dirname, '.')
+    build: path.join(__dirname, 'dist')
 };
 
 module.exports = {

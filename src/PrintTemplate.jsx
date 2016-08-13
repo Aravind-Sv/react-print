@@ -1,4 +1,5 @@
 var React = require('react');
+require('react-print/react-print.css');
 
 export default class PrintTemplate extends React.Component {
     render() {
