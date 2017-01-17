@@ -18,21 +18,28 @@ Create your own markup structure in explicitly named components (e.g., InvoicePr
 <div id="print-mount"></div> <!--react mount point for markup to show ON print-->
 ```
 ```javascript
-PrintTemplate = React.createClass({
-    render() {
-       return (
-           <div id="react-print">
-                <h3>All markup for showing on print</h3>
-                <p>Write all of your "HTML" (really JSX) that you want to show
-                on print, in here</p>
-                <p>If you need to show different data, you could grab that data 
-                via AJAX on componentWill/DidMount or pass it in as props</p>
-                <p>The CSS will hide the original content and show what is in your 
-                Print Template.</p>
-           </div>
-       )
-    }
-});
+var React = require('react');
+var ReactDOM = require('react-dom');
+var PrintTemplate = require ('react-print');
 
-React.render(React.createElement(PrintTemplate, {}), document.getElementById('print-mount'));
+class MyTemplate extends React.Component {
+  render() {
+    return (
+          <PrintTemplate>
+             <div>
+                  <h3>All markup for showing on print</h3>
+                  <p>Write all of your "HTML" (really JSX) that you want to show
+                  on print, in here</p>
+                  <p>If you need to show different data, you could grab that data
+                  via AJAX on componentWill/DidMount or pass it in as props</p>
+                  <p>The CSS will hide the original content and show what is in your
+                  Print Template.</p>
+             </div>
+           </PrintTemplate>
+       )
+  }
+}
+
+ReactDOM.render(<MyTemplate/>, document.getElementById('print-mount'));
+
 ```
