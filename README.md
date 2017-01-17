@@ -13,6 +13,8 @@ Create your own markup structure in explicitly named components (e.g., InvoicePr
 
 # Example
 
+### You can find a usable example of this demo code in the demo directory.
+
 ```html
 <div id="react-no-print"></div> <!-- stuff to hide on print -->
 <div id="print-mount"></div> <!--react mount point for markup to show ON print-->
