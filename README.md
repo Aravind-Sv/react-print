@@ -15,7 +15,7 @@ Create your own markup structure in explicitly named components (e.g., InvoicePr
 
 ```html
 <div id="react-no-print"></div> <!-- stuff to hide on print -->
-<div id="print-mount"></div> <!—react mount point for markup to show ON print-->
+<div id="print-mount"></div> <!--react mount point for markup to show ON print-->
 ```
 ```javascript
 PrintTemplate = React.createClass({
